@@ -33,65 +33,7 @@ div{font-family: "Impact", Charcoal, sans-serif;}
 
 <img src="https://sites.psu.edu/abingtonart/files/2013/12/20103.jpg" width="300" height="250"style="margin-right:30px; margin-bottom: 50px; style="margin-right:-50px;/>
 
-<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
-		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
-		<script>
 
-			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
-			
-			var camera, scene, renderer;
-			var geometry, material, mesh;
-
-			function setup() {
-
-				var W = window.innerWidth, H = window.innerHeight;
-				renderer = new THREE.WebGLRenderer( { preserveDrawingBuffer: true } );
-	renderer.autoClearColor = false;
-				renderer.setSize( W, H );
-				document.body.appendChild( renderer.domElement );
-
-				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
-				camera.position.z = 500;
-
-				scene = new THREE.Scene();
-				
-				
-				// paste your code from the geometryGUI here
-				for ( var i = 0; i < 150; i ++ ) {
-geometry = new THREE.OctahedronGeometry(126.1, 2);
-material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading, wireframe: true, wireframeLinewidth: 1});
-mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-					mesh.position.x = Math.random() * 1000 - 500;
-					mesh.position.y = Math.random() * 1000 - 500;
-					mesh.position.z = Math.random() * 1000 - 500;
-					mesh.rotation.x = Math.random() * 2 * Math.PI;
-					mesh.rotation.y = Math.random() * 2 * Math.PI;
-					mesh.rotation.z = Math.random() * 2 * Math.PI;
-					scene.add( mesh );
-				}
-
-
-			}
-
-			function draw() {
-
-				requestAnimationFrame( draw );
-				
-				// experiment with code from the snippets menu here
-camera.position.x = Math.sin( Date.now() * 0.002 ) * 500;
-				camera.position.z = Math.sin( Date.now() * 0.002 ) * 500;
-				camera.position.y = Math.sin( Date.now() * 0.002 ) * 300;
-				camera.lookAt(mesh.position);
-
-				renderer.render( scene, camera );
-
-			}
-
-			setup();
-			draw();
-
-		</script>
 
    
 
