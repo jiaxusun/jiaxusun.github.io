@@ -1,0 +1,57 @@
+*{margin:0;
+ padding:0; 
+}
+	
+
+body{background-image: url("https://dns64.6box.cn/static/download/Graphic-Tweakz/Illustrator%20Tutorial%203D%20Landscape%20Illustration.jpg");
+	width:100%;
+	}
+
+/*.div-b{ background:#000;width:900px;height:450px; color:white; margin-top: 30px; margin-left: 120px; font-size:50px; 
+filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6} 
+*/
+
+h1{
+    margin-top: 20px;
+	text-align: center;
+    color: white;
+}
+p {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin: 5em auto;
+	margin-top: 20px; 
+	width: 70%;
+	
+}
+
+		div{font-size:70px; color:white; font-family: "Impact", Charcoal, sans-serif; text-align:center;}
+
+		
+		a{color:#333;text-decoration:none}
+		.nav {
+			font-size: 14px;
+			list-style:none; 
+			height:30px;
+			 border-bottom:10px 
+			 solid #F60; 
+			 margin-top:80px; 
+			 padding-left:700px;
+			}
+
+		.nav li{
+			float:left
+		}
+		.nav li a{
+			display:block;
+			 height:30px;
+			 text-align:center; 
+			 line-height:30px; 
+			 width:120px; 
+			 background:#efefef;
+			  margin-left:1px;}
+		.nav li a.on, .nav li a:hover {
+			background:#F60;
+			color:#fff; }
+	
